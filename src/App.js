@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { List, Icon, Spin, Row, Col } from 'antd';
+import { List, Icon, Spin, Row } from 'antd';
 import './App.css';
 
 const IconText = ({ type, text, onClick }) => (
@@ -7,10 +7,6 @@ const IconText = ({ type, text, onClick }) => (
     <Icon type={type} style={{ marginRight: 8, fontSize: 24 }} />
     {text}
   </span>
-);
-
-const DemoBox = props => (
-  <p className={`height-${props.value}`}>{props.children}</p>
 );
 
 class App extends Component {
